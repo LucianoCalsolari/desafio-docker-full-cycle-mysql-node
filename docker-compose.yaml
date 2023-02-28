@@ -18,6 +18,7 @@ services:
     restart: always
     build: 
       context: ./node 
+    command: sh -c "/wait && npm start"
     networks:
      - desafio-net
     depends_on:
